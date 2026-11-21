@@ -1,0 +1,17 @@
+name = "mina-ai-local-test"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOWED_ORIGINS = "http://127.0.0.1:8000,http://localhost:8000"
+ADMIN_USERNAME = "Argion"
+ADMIN_PASSWORD = "ci-test-password-at-least-12"
+SESSION_SECRET = "local-test-only-session-secret-DO-NOT-USE-IN-PRODUCTION-0123456789"
+GEMINI_MODEL = "gemini-3.8-flash"
+GEMINI_API_KEY = "local-test-placeholder-not-a-real-api-key"
+
+[[d1_databases]]
+binding = "MINA_DB"
+database_name = "mina-ai-db-preview"
+database_id = "a0c9df12-44bc-4e58-866c-25a3651edd66"
+migrations_dir = "migrations"
